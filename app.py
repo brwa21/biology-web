@@ -12,7 +12,7 @@ instruction = (
 )
 # بەکارهێنانی مۆدێلی چاککراو
 model = genai.GenerativeModel(
-    model_name='gemini-1.5-flash' # وشەی latest دڵنیایی دەدات کە کۆن نییە
+   model_name='models/gemini-1.5-flash' # وشەی latest دڵنیایی دەدات کە کۆن نییە
 )
 
 
@@ -40,5 +40,6 @@ if user_query:
         st.write("---")
 
         st.markdown(response.text)
+
 
 
