@@ -3,7 +3,7 @@ import google.generativeai as genai
 from PIL import Image
 
 # ١. لێرە کلیلە نوێیەکە دابنێ
-genai.configure(api_key="AIzaSyAH_eJ4XHH9MsPI1YaJ9xOFMiKPaDvHZxw")
+genai.configure(api_key="AIzaSyBAnZshjErZ5apA-NssJcbIp1SBJlCuGbY")
 
 # ڕێنمایی بۆ ئەوەی وەک مامۆستای بایۆلۆجی قسە بکات
 instruction = (
@@ -38,4 +38,5 @@ if user_query:
             response = model.generate_content(user_query)
             
         st.write("---")
+
         st.markdown(response.text)
